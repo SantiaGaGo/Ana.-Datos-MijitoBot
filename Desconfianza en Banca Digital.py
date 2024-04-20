@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 df = pd.read_excel(r'C:\Users\santi\Downloads\datos DANE\Datos Para Analisis Capitulo I (DANE).xlsx', sheet_name='TICS')
 df2 = pd.read_excel(r'C:\Users\santi\Downloads\datos DANE\Datos Para Analisis Capitulo E (DANE).xlsx', sheet_name='EDAD')
 # Seleccionar las columnas relevantes que representan las preguntas y las respuestas
-#La Pregunta literal es: ""
+#La Pregunta literal es: "¿Cuál es la razón principal para no usar el internet en compras ni en servicios de banca electrónica?"
 columna_respuestas = 'NPCIP8DE'
 #Variables totales: 1 (ID = 5177)
 #Disponible  en documentacion https://microdatos.dane.gov.co/index.php/catalog/743/data-dictionary
@@ -47,4 +47,4 @@ plt.show()
 
 print("DataFrame utilizado después del filtro:")
 print(df_filtrado)
-#49997 encuestados Aprox.
+#44.498 encuestados Aprox.
